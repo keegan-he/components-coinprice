@@ -1,33 +1,112 @@
-.App {
-  text-align: center;
+:root {
+  --bgcolor: #cdcdcd;
+  --footerbg: #113f67;
+  --b_footerbg: #072034;
+  --bgcolor-nav: #040d1f;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(23, 23, 29);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Container {
+  display: grid;
+  padding: 10%;
+  grid-template-columns: 1fr;
+}
+
+.Nav {
+  background-color: var(--bgcolor);
+  background-color: var(--bgcolor-nav);
+  padding-top: -5px;
+  padding-bottom: -9px;
+  padding-left: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5vw;
+  color: rgb(221, 215, 226);
+  text-shadow: 2px 2px 4px #00000012;
+  /*background-image: url("https://media.giphy.com/media/FetQWBKnGfk1G/giphy.gif"); */
+}
+
+.Box {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url("https://media.giphy.com/media/iHHv1bKHEvtXq/giphy.gif");
+  background-size: cover; /* stretch image without repeating */
+  
+  
+
 }
 
-.App-link {
-  color: #61dafb;
+.Footer {
+  background-color: var(--footerbg);
+  height: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Coins {
+  background-color: rgb(73, 143, 246);
+  display: grid;
+  padding-left: 1%;
+  align-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 20px; */
+  /* grid-row-gap: 10vh;
+  grid-column-gap: 30px; */
+  
+
+}
+
+.BottomFoot {
+  background-color: var(--b_footerbg);
+  height: 1vh;
+  align-self: center;
+  
+  
+}
+
+.Button {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.GraphBox {
+  display: grid;
+  padding-top: 400px;
+  padding-left: 5%;
+  padding-right: 5%;
+  align-self: end;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px;
+  grid-row-gap: 1px;
+  grid-column-gap: 30px;
+
+}
+#PriceBox {
+  background-color: #113f67;
+  
+}
+
+.BarChart-bar {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  align-self: end;
+  padding-top: 10px;
+  /*border-style: dashed;*/
+  background-color: #06e1e7;
+  justify-content: center;
+  color: rgb(57, 57, 57);
+  text-shadow: 2px 2px 4px #00000012;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.399);
+  max-height: 350px; /* max height of BTC hack */
+}
+
+.BarChart-bar:hover {
+  font-size: 20px;
+  font-style: oblique;
+  background-color: #32dd73;
+  transition:
+      font-style .1s,
+      font-size .2s,
+      background-color .8s,
+      padding-left 3s;
 }
