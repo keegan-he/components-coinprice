@@ -76,8 +76,6 @@ class App extends Component {
           <div className="Button">
             <button onClick={() => this.doFetch()}> Update Coin Data </button>
           </div>
-          <section id="output">
-          </section>
         </div>
         <script src="main.js"></script>
       </div>
