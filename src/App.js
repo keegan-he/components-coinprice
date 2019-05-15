@@ -17,7 +17,6 @@ class App extends Component {
       'bnb',
     ],
   };
-
   componentDidMount() {
     fetch("https://api.coinlore.com/api/tickers/")
       .then(response => response.json())
@@ -32,7 +31,6 @@ class App extends Component {
         });
       });
   }
-
   doFetch = () => {
     console.log('onRefresh function running')
     fetch("https://api.coinlore.com/api/tickers/")
@@ -48,7 +46,6 @@ class App extends Component {
         });
       });
   }
-
   render() {
     console.log("render function is running")
     return (
@@ -77,7 +74,6 @@ class App extends Component {
             <button onClick={() => this.doFetch()}> Update Coin Data </button>
           </div>
         </div>
-        <script src="main.js"></script>
       </div>
     );
   }
