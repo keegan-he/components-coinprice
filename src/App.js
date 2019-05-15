@@ -66,18 +66,12 @@ class App extends Component {
               }
             </div>
           </div>
-          <div className="Footer">
-          </div>
           <div className="Coins">
             <div>BTC price: ${this.state.btc}</div>
             <div>BCH price: ${this.state.bch}</div>
             <div>ETH price: ${this.state.eth}</div>
             <div>LTC price: ${this.state.ltc}</div>
             <div>BNB price: ${this.state.bnb}</div>
-          </div>
-          <div id="PriceBox">
-          </div>
-          <div className="BottomFoot">
           </div>
           <div className="Button">
             <button onClick={() => this.doFetch()}> Update Coin Data </button>
