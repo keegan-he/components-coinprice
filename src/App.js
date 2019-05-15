@@ -4,11 +4,6 @@ import './App.css';
 class App extends Component {
 
   state = {
-    btc: '',
-    bch: '',
-    eth: '',
-    ltc: '',
-    bnb: '',
     coins: [
       'btc',
       'bch',
