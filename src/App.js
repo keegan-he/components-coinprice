@@ -61,7 +61,6 @@ class App extends Component {
                 this.state.coins.map(coin => (
                   <div className="BarChart-bar" style={{ height: this.state[coin] + "%" }}>
                     ${this.state[coin]}
-
                   </div>
                 ))
               }
